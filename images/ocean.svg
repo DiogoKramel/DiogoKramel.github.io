@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f4fb"/>
+      <stop offset="1" stop-color="#cfe8f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#sky)"/>
+  <circle cx="310" cy="70" r="26" fill="#ffd27a" opacity="0.9"/>
+  <g>
+    <path fill="#7fb3d5" opacity="0.7" d="M-400 150 Q-350 130 -300 150 T-200 150 T-100 150 T0 150 T100 150 T200 150 T300 150 T400 150 T500 150 V300 H-400Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="200 0" dur="10s" repeatCount="indefinite"/>
+    </path>
+    <path fill="#3b82b8" opacity="0.8" d="M-400 185 Q-340 165 -280 185 T-160 185 T-40 185 T80 185 T200 185 T320 185 T440 185 V300 H-400Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="240 0" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path fill="#1d4f7a" d="M-400 225 Q-360 210 -320 225 T-240 225 T-160 225 T-80 225 T0 225 T80 225 T160 225 T240 225 T320 225 T400 225 T480 225 V300 H-400Z">
+      <animateTransform attributeName="transform" type="translate" from="160 0" to="0 0" dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

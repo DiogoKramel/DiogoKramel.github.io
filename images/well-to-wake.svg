@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" font-family="Inter, Helvetica, Arial, sans-serif">
+  <rect width="400" height="300" fill="#f4f8f6"/>
+  <!-- connecting line -->
+  <path id="chain" d="M60 150 H340" stroke="#9fb8ad" stroke-width="3" stroke-dasharray="6 6" fill="none"/>
+  <!-- moving energy -->
+  <g fill="#2a9d8f">
+    <circle r="5"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#chain"/></animateMotion></circle>
+    <circle r="5"><animateMotion dur="4s" begin="-1.33s" repeatCount="indefinite"><mpath href="#chain"/></animateMotion></circle>
+    <circle r="5"><animateMotion dur="4s" begin="-2.66s" repeatCount="indefinite"><mpath href="#chain"/></animateMotion></circle>
+  </g>
+  <!-- WELL: plant / resource -->
+  <g transform="translate(60 150)">
+    <circle r="34" fill="#ffffff" stroke="#2a9d8f" stroke-width="2.5"/>
+    <path d="M0 18 V-4" stroke="#2a9d8f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M0 0 C-14 -2 -18 -14 -16 -20 C-6 -20 0 -12 0 0Z" fill="#2a9d8f"/>
+    <path d="M0 -6 C12 -8 18 -18 16 -24 C6 -24 0 -16 0 -6Z" fill="#52b69a"/>
+  </g>
+  <text x="60" y="210" font-size="14" font-weight="600" fill="#264653" text-anchor="middle">Well</text>
+  <!-- TANK: fuel -->
+  <g transform="translate(200 150)">
+    <circle r="34" fill="#ffffff" stroke="#e9c46a" stroke-width="2.5"/>
+    <rect x="-12" y="-16" width="24" height="32" rx="4" fill="#e9c46a"/>
+    <rect x="-6" y="-21" width="12" height="6" rx="2" fill="#d4a93f"/>
+    <path d="M-6 2 C-6 -4 0 -10 0 -10 C0 -10 6 -4 6 2 A6 6 0 0 1 -6 2Z" fill="#ffffff"/>
+  </g>
+  <text x="200" y="210" font-size="14" font-weight="600" fill="#264653" text-anchor="middle">Tank</text>
+  <!-- WAKE: ship -->
+  <g transform="translate(340 150)">
+    <circle r="34" fill="#ffffff" stroke="#264653" stroke-width="2.5"/>
+    <path d="M-20 4 H20 L13 15 H-14Z" fill="#264653"/>
+    <rect x="-10" y="-9" width="16" height="13" fill="#264653"/>
+    <rect x="-6" y="-17" width="5" height="9" fill="#e76f51"/>
+    <path d="M-22 21 Q-15 17 -8 21 T6 21 T20 21" stroke="#7fb3d5" stroke-width="2" fill="none"/>
+  </g>
+  <text x="340" y="210" font-size="14" font-weight="600" fill="#264653" text-anchor="middle">Wake</text>
+  <text x="200" y="70" font-size="15" fill="#264653" text-anchor="middle" font-weight="600">Well-to-wake</text>
+  <text x="200" y="90" font-size="12" fill="#5c6f68" text-anchor="middle">production → bunkering → combustion</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b2a4a"/>
+      <stop offset="1" stop-color="#0e3b63"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd27a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#sea)"/>
+  <!-- graticule -->
+  <g stroke="#ffffff" stroke-opacity="0.08" fill="none">
+    <path d="M0 60H400M0 120H400M0 180H400M0 240H400"/>
+    <path d="M50 0V300M110 0V300M170 0V300M230 0V300M290 0V300M350 0V300"/>
+  </g>
+  <!-- abstract land masses -->
+  <g fill="#1d4f7a" opacity="0.9">
+    <path d="M20 40 Q60 20 110 38 Q130 70 100 95 Q70 120 40 100 Q10 80 20 40Z"/>
+    <path d="M160 30 Q215 15 250 40 Q262 75 235 90 Q205 105 180 85 Q150 60 160 30Z"/>
+    <path d="M270 120 Q330 100 380 130 Q390 175 350 190 Q300 200 280 170 Q260 145 270 120Z"/>
+    <path d="M90 170 Q130 160 150 190 Q155 235 120 260 Q90 270 80 235 Q70 200 90 170Z"/>
+    <path d="M200 200 Q240 190 255 215 Q258 250 225 262 Q195 265 192 235Z"/>
+  </g>
+  <!-- routes -->
+  <g fill="none" stroke="#7fd3ff" stroke-opacity="0.45" stroke-width="1.4" stroke-dasharray="3 4">
+    <path id="r1" d="M115 110 C160 120 200 115 265 140"/>
+    <path id="r2" d="M60 120 C70 160 110 150 160 175 S230 185 290 200"/>
+    <path id="r3" d="M240 100 C270 90 320 85 370 105"/>
+    <path id="r4" d="M150 160 C170 140 200 150 215 185"/>
+    <path id="r5" d="M30 140 C80 200 150 260 260 275"/>
+  </g>
+  <!-- ships -->
+  <g fill="#ffd27a">
+    <circle r="3.2"><animateMotion dur="9s" repeatCount="indefinite"><mpath href="#r1"/></animateMotion></circle>
+    <circle r="3.2"><animateMotion dur="12s" repeatCount="indefinite" begin="-4s"><mpath href="#r2"/></animateMotion></circle>
+    <circle r="3.2"><animateMotion dur="8s" repeatCount="indefinite" begin="-2s"><mpath href="#r3"/></animateMotion></circle>
+    <circle r="3.2"><animateMotion dur="6s" repeatCount="indefinite" begin="-1s"><mpath href="#r4"/></animateMotion></circle>
+    <circle r="3.2"><animateMotion dur="14s" repeatCount="indefinite" begin="-7s"><mpath href="#r5"/></animateMotion></circle>
+    <circle r="3.2"><animateMotion dur="9s" repeatCount="indefinite" begin="-6s" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#r1"/></animateMotion></circle>
+  </g>
+  <!-- emission halos -->
+  <g>
+    <circle r="12" fill="url(#glow)" opacity="0.6"><animateMotion dur="9s" repeatCount="indefinite"><mpath href="#r1"/></animateMotion></circle>
+    <circle r="12" fill="url(#glow)" opacity="0.6"><animateMotion dur="12s" repeatCount="indefinite" begin="-4s"><mpath href="#r2"/></animateMotion></circle>
+    <circle r="12" fill="url(#glow)" opacity="0.6"><animateMotion dur="14s" repeatCount="indefinite" begin="-7s"><mpath href="#r5"/></animateMotion></circle>
+  </g>
+</svg>
